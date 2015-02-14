@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+	attr_accessor :confirm_success_url, :config_name
+	
   # Include default devise modules.
   devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :trackable, :validatable
